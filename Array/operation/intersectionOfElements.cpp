@@ -16,7 +16,7 @@ int main() {
         for(int j = 0; j < sizeb; j++) {
             if(arr[i] == brr[j]) {
                 ans.push_back(arr[i]);
-                // brr[j] = INT_MIN;
+                brr[j] = INT_MIN;
             }
         }
     }

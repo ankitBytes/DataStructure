@@ -1,26 +1,22 @@
-#include <iostream>
+#include<iostream>
+#include<math.h>
 using namespace std;
+#define pi 3.14;
+
+void areaOfCircle() {
+
+    double radius;
+    cout << "Enter the radius of the circle " << endl;
+    cin >> radius;
+
+    double area = 3.14 * pow(radius, 2);
+
+    cout << "Area = " << area << endl;
+}
 
 int main() {
 
-    double num[] = {11, 12, 13, 14, 15};
-    double add = 0;
-    double count = 0;
-    double avg;
-
-    cout << "The number is ";
-
-    for(const double& n : num) {
-        cout << n << " " <<endl;
- 
-        add += n;
- 
-        ++count;
-    }
-
-    cout << "Addition of numbers= " << add << endl;
-    avg = add / count;
-    cout << "average of numbers= " << avg << endl;
-
+    areaOfCircle();
+    
     return 0;
 }
